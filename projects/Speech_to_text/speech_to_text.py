@@ -11,7 +11,7 @@ def record_voice():
 		try:
 			phrase = microphone.recognize_google(audio, language='en')
 			return phrase
-		except speech_recognition.UnkownValueError:
+		except speech_recognition.UnknownValueError:
 			return "I didn't understand what you said"
 
 if __name__ == '__main__':
